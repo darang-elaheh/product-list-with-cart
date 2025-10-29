@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#fcf9f7ff]">
+    <div
+      class="container p-5 md:p-10 mx-auto flex flex-col sm:flex-row gap-1 md:gap-x-5">
+      <!------------------------------------section desserts list-------------------------------------->
+      <div
+        class="desserts-list flex-[2] flex flex-wrap py-5 gap-3 justify-center md:justify-start">
+        <h1 class="w-full text-2xl font-black">Desserts</h1>
+        <div
+          data-id="1"
+          class="dessert-card w-full md:w-2/6 lg:w-1/4 grow-0 md:grow-1 md:max-w-[50%] rounded-lg overflow-hidden">
+          <img
+            class="rounded-lg"
+            src="images/image-waffle-desktop.jpg"
+            alt="" />
+          <form action="">
+            <button
+              type="submit"
+              class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
+              <img src="images/icon-add-to-cart.svg" alt="" />
+              &nbsp;&nbsp;Add to Cart
+            </button>
+            <button
+              type="submit"
+              data-count="1"
+              class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
+              <div
+                class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="2"
+                  fill="currentColor"
+                  viewBox="0 0 10 2"
+                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                  <path d="M0 .375h10v1.25H0V.375Z" />
+                </svg>
+              </div>
+              <span class="count-value">1</span>
+              <div
+                class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="currentColor"
+                  viewBox="0 0 10 10"
+                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                  <path
+                    d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+                </svg>
+              </div>
+            </button>
+          </form>
+          <div>
+            <div class="text-[#87635aff]">waffle</div>
+            <div class="dessert-name font-bold">Waffle with Berries</div>
+            <div class="dessert-price text-[#c73a0fff]">6.50$</div>
+          </div>
+        </div>
+        <div
+          data-id="2"
+          class="dessert-card w-full md:w-2/6 lg:w-1/4 grow-0 md:grow-1 md:max-w-[50%] rounded-lg overflow-hidden">
+          <img src="images/image-brownie-desktop.jpg" alt="" />
+          <form action="">
+            <button
+              type="submit"
+              class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
+              <img src="images/icon-add-to-cart.svg" alt="" />
+              &nbsp;&nbsp;Add to Cart
+            </button>
+            <button
+              type="submit"
+              data-count="1"
+              class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
+              <div
+                class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="2"
+                  fill="currentColor"
+                  viewBox="0 0 10 2"
+                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                  <path d="M0 .375h10v1.25H0V.375Z" />
+                </svg>
+              </div>
+              <span class="count-value">1</span>
+              <div
+                class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="currentColor"
+                  viewBox="0 0 10 10"
+                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                  <path
+                    d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+                </svg>
+              </div>
+            </button>
+          </form>
+          <div>
+            <div class="text-[#87635aff]">Brownie</div>
+            <div class="dessert-name font-bold">Salted Caramel Brownie</div>
+            <div class="dessert-price text-[#c73a0fff]">4.50$</div>
+          </div>
+        </div>
+        <div
+          data-id="3"
+          class="dessert-card w-full md:w-2/6 lg:w-1/4 grow-0 md:grow-1 md:max-w-[50%] rounded-lg overflow-hidden">
+          <img src="images/image-baklava-desktop.jpg" alt="" />
+          <form action="">
+            <button
+              type="submit"
+              class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
+              <img src="images/icon-add-to-cart.svg" alt="" />
+              &nbsp;&nbsp;Add to Cart
+            </button>
+            <button
+              type="submit"
+              data-count="1"
+              class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
+              <div
+                class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="2"
+                  fill="currentColor"
+                  viewBox="0 0 10 2"
+                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                  <path d="M0 .375h10v1.25H0V.375Z" />
+                </svg>
+              </div>
+              <span class="count-value">1</span>
+              <div
+                class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="currentColor"
+                  viewBox="0 0 10 10"
+                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                  <path
+                    d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+                </svg>
+              </div>
+            </button>
+          </form>
+          <div>
+            <div class="text-[#87635aff]">Baklava</div>
+            <div class="dessert-name font-bold">Pistachio Baklava</div>
+            <div class="dessert-price text-[#c73a0fff]">4.00$</div>
+          </div>
+        </div>
+        <div
+          data-id="4"
+          class="dessert-card w-full md:w-2/6 lg:w-1/4 grow-0 md:grow-1 md:max-w-[50%] rounded-lg overflow-hidden">
+          <img src="images/image-cake-desktop.jpg" alt="" />
+          <form action="">
+            <button
+              type="submit"
+              class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
+              <img src="images/icon-add-to-cart.svg" alt="" />
+              &nbsp;&nbsp;Add to Cart
+            </button>
+            <button
+              type="submit"
+              data-count="1"
+              class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
+              <div
+                class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="2"
+                  fill="currentColor"
+                  viewBox="0 0 10 2"
+                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                  <path d="M0 .375h10v1.25H0V.375Z" />
+                </svg>
+              </div>
+              <span class="count-value">1</span>
+              <div
+                class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="currentColor"
+                  viewBox="0 0 10 10"
+                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                  <path
+                    d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+                </svg>
+              </div>
+            </button>
+          </form>
+          <div>
+            <div class="text-[#87635aff]">Cake</div>
+            <div class="dessert-name font-bold">Velvet Cake</div>
+            <div class="dessert-price text-[#c73a0fff]">4.50$</div>
+          </div>
+        </div>
+        <div
+          data-id="5"
+          class="dessert-card w-full md:w-2/6 lg:w-1/4 grow-0 md:grow-1 md:max-w-[50%] rounded-lg overflow-hidden">
+          <img src="images/image-creme-brulee-desktop.jpg" alt="" />
+          <form action="">
+            <button
+              type="submit"
+              class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
+              <img src="images/icon-add-to-cart.svg" alt="" />
+              &nbsp;&nbsp;Add to Cart
+            </button>
+            <button
+              type="submit"
+              data-count="1"
+              class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
+              <div
+                class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="2"
+                  fill="currentColor"
+                  viewBox="0 0 10 2"
+                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                  <path d="M0 .375h10v1.25H0V.375Z" />
+                </svg>
+              </div>
+              <span class="count-value">1</span>
+              <div
+                class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="currentColor"
+                  viewBox="0 0 10 10"
+                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                  <path
+                    d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+                </svg>
+              </div>
+            </button>
+          </form>
+          <div>
+            <div class="text-[#87635aff]">Crème Brûlée</div>
+            <div class="dessert-name font-bold">Vanilla Bean Crème Brûlée</div>
+            <div class="dessert-price text-[#c73a0fff]">7.00$</div>
+          </div>
+        </div>
+        <div
+          data-id="6"
+          class="dessert-card w-full md:w-2/6 lg:w-1/4 grow-0 md:grow-1 md:max-w-[50%] rounded-lg overflow-hidden">
+          <img src="images/image-macaron-desktop.jpg" alt="" />
+          <form action="">
+            <button
+              type="submit"
+              class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
+              <img src="images/icon-add-to-cart.svg" alt="" />
+              &nbsp;&nbsp;Add to Cart
+            </button>
+            <button
+              type="submit"
+              data-count="1"
+              class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
+              <div
+                class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="2"
+                  fill="currentColor"
+                  viewBox="0 0 10 2"
+                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                  <path d="M0 .375h10v1.25H0V.375Z" />
+                </svg>
+              </div>
+              <span class="count-value">1</span>
+              <div
+                class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="currentColor"
+                  viewBox="0 0 10 10"
+                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                  <path
+                    d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+                </svg>
+              </div>
+            </button>
+          </form>
+          <div>
+            <div class="text-[#87635aff]">Macaron</div>
+            <div class="dessert-name font-bold">Macaron Mix of Five</div>
+            <div class="dessert-price text-[#c73a0fff]">8.00$</div>
+          </div>
+        </div>
+        <div
+          data-id="7"
+          class="dessert-card w-full md:w-2/6 lg:w-1/4 grow-0 md:grow-1 md:max-w-[50%] rounded-lg overflow-hidden">
+          <img src="images/image-meringue-desktop.jpg" alt="" />
+          <form action="">
+            <button
+              type="submit"
+              class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
+              <img src="images/icon-add-to-cart.svg" alt="" />
+              &nbsp;&nbsp;Add to Cart
+            </button>
+            <button
+              type="submit"
+              data-count="1"
+              class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
+              <div
+                class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="2"
+                  fill="currentColor"
+                  viewBox="0 0 10 2"
+                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                  <path d="M0 .375h10v1.25H0V.375Z" />
+                </svg>
+              </div>
+              <span class="count-value">1</span>
+              <div
+                class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="currentColor"
+                  viewBox="0 0 10 10"
+                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                  <path
+                    d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+                </svg>
+              </div>
+            </button>
+          </form>
+          <div>
+            <div class="text-[#87635aff]">Pie</div>
+            <div class="dessert-name font-bold">Lemon Meringue Pie</div>
+            <div class="dessert-price text-[#c73a0fff]">5.00$</div>
+          </div>
+        </div>
+        <div
+          data-id="8"
+          class="dessert-card w-full md:w-2/6 lg:w-1/4 grow-0 md:grow-1 md:max-w-[50%] rounded-lg overflow-hidden">
+          <img src="images/image-panna-cotta-desktop.jpg" alt="" />
+          <form action="">
+            <button
+              type="submit"
+              class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
+              <img src="images/icon-add-to-cart.svg" alt="" />
+              &nbsp;&nbsp;Add to Cart
+            </button>
+            <button
+              type="submit"
+              data-count="1"
+              class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
+              <div
+                class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="2"
+                  fill="currentColor"
+                  viewBox="0 0 10 2"
+                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                  <path d="M0 .375h10v1.25H0V.375Z" />
+                </svg>
+              </div>
+              <span class="count-value">1</span>
+              <div
+                class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="currentColor"
+                  viewBox="0 0 10 10"
+                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                  <path
+                    d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+                </svg>
+              </div>
+            </button>
+          </form>
+          <div>
+            <div class="text-[#87635aff]">Panna Cotta</div>
+            <div class="dessert-name font-bold">Vanilla Panna Cotta</div>
+            <div class="dessert-price text-[#c73a0fff]">6.50$</div>
+          </div>
+        </div>
+        <div
+          data-id="9"
+          class="dessert-card w-full md:w-2/6 lg:w-1/4 grow-0 md:grow-1 md:max-w-[50%] rounded-lg overflow-hidden">
+          <img src="images/image-tiramisu-desktop.jpg" alt="" />
+          <form action="">
+            <button
+              type="submit"
+              class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
+              <img src="images/icon-add-to-cart.svg" alt="" />
+              &nbsp;&nbsp;Add to Cart
+            </button>
+            <button
+              type="submit"
+              data-count="1"
+              class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
+              <div
+                class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="2"
+                  fill="currentColor"
+                  viewBox="0 0 10 2"
+                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                  <path d="M0 .375h10v1.25H0V.375Z" />
+                </svg>
+              </div>
+              <span class="count-value">1</span>
+              <div
+                class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="currentColor"
+                  viewBox="0 0 10 10"
+                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                  <path
+                    d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+                </svg>
+              </div>
+            </button>
+          </form>
+          <div>
+            <div class="text-[#87635aff]">Tiramisu</div>
+            <div class="dessert-name font-bold">Classic Tiramisu</div>
+            <div class="dessert-price text-[#c73a0fff]">5.50$</div>
+          </div>
+        </div>
+      </div>
+
+      <!------------------------------------------------------section yourcart----------------------------->
+      <div
+        class="your-cart bg-white rounded-lg flex-[1] p-5 h-max sticky top-4 self-start max-h-[100vh] overflow-y-auto">
+        <h1 class="text-[#c73a0fff] font-black pb-1">Your Cart(0)</h1>
+        <div class="empty-list">
+          <img
+            src="images/illustration-empty-cart.svg"
+            alt=""
+            class="justify-self-center" />
+
+          <div class="justify-self-center">Your added items appear here</div>
+        </div>
+        <div class="cart-items">
+          <div class="cart-item flex justify-items-center justify-between">
+            <div class="w-9/10">
+              <div class="pt-3 font-bold text-[#260f08ff] text-xs">
+                Classic Tiramisu
+              </div>
+              <div class="flex gap-5 pb-3">
+                <div class="text-[#c73a0fff] font-semibold text-xs">1X</div>
+                <div class="text-[#87635aff] text-xs">@$5.50</div>
+                <div class="text-[#87635aff] font-semibold text-xs">@$5.50</div>
+              </div>
+            </div>
+            <div
+              class="btn-close-item w-1/10 w-5 h-5 group rounded-full border-1 border-[#c9aea6ff] flex self-center items-center justify-center hover:border-[#260f08ff] transition-colors duration-300">
+              <svg
+                class="mx-auto fill-[#c9aea6ff] group-hover:fill-black transition-colors duration-300"
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                fill="none"
+                viewBox="0 0 10 10">
+                <path
+                  d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z" />
+              </svg>
+            </div>
+          </div>
+          <hr class="divider border-[#c9aea6ff]" />
+        </div>
+
+        <div
+          class="hidden carbon-neutral bg-[#fcf9f7ff] p-5 px-10 rounded-lg mx-auto">
+          <img
+            src="images/icon-carbon-neutral.svg"
+            alt=""
+            class="inline-block" />
+          Tis is a
+          <span class="font-bold">carbon-neutral</span>
+          delivery
+        </div>
+        <form action="">
+          <button
+            class="confirm-btn hidden bg-[#c73a0fff] rounded-full p-3 w-full my-5 text-white"
+            type="submit">
+            Confirm Order
+          </button>
+        </form>
+      </div>
+    </div>
+    <script defer src="js/script.js"></script>
+  </body>
+</html>
