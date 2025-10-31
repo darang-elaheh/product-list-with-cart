@@ -25,15 +25,20 @@ dessertsListEl.addEventListener("click", function (e) {
     const id = addCartBtn.closest(".dessert-card").dataset.id;
     const dName =
       addCartBtn.parentElement.nextElementSibling.children[1].innerText;
-    console.log(dName);
+
     const dPrice =
       addCartBtn.parentElement.nextElementSibling.children[2].innerText;
+    const thumbnailPic = document.querySelector(
+      `.thumbnail-pic[data-id="${id}"]`
+    );
+    console.log(thumbnailPic.src);
 
     const product = {
       id,
       name: dName,
       price: dPrice,
       count: 1,
+      thumbnailPic:thumbnailPic.src,
     };
     orderCart.push(product);
     renderCart(orderCart);
@@ -127,7 +132,7 @@ function renderCart(orderCartArry) {
                             <div class="w-2/10 my-auto">
                               <img
                                 class="rounded-sm overflow-hidden"
-                                src="images/image-baklava-thumbnail.jpg"
+                                src="${product.thumbnailPic}"
                                 alt="" />
                             </div>
 
