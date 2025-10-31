@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-[#fcf9f7ff]">
+  <body class="bg-[#fcf9f7ff] relative">
     <div
       class="container p-5 md:p-10 mx-auto flex flex-col sm:flex-row gap-1 md:gap-x-5">
       <!------------------------------------section desserts list-------------------------------------->
@@ -519,7 +519,55 @@
           </button>
         </form>
       </div>
+      <!------------------------------------------ modal section ------------------------------------------>
+      <div
+        class="hidden modal fixed bg-black/50 inset-0 flex items-center justify-center">
+        <div class="bg-white w-full md:w-[30%] p-7 rounded-lg">
+          <img src="images/icon-order-confirmed.svg" alt="" class="pb-3" />
+          <div class="text-2xl font-black py-1">Order confirmed</div>
+          <div class="text-xs text-[#87635aff] py-1">
+            We hope you enjoyed your food!
+          </div>
+
+          <div class="modal-items bg-gray-100 p-5 my-4 rounded-sm">
+            <div class="flex justify-items-center justify-between">
+              <div class="w-2/10 my-auto">
+                <img
+                  class="rounded-sm overflow-hidden"
+                  src="images/image-baklava-thumbnail.jpg"
+                  alt="" />
+              </div>
+
+              <div class="w-5/10 flex flex-col justify-around">
+                <div class="font-bold text-[#260f08ff] text-xs">
+                  Classic Tiramisu
+                </div>
+                <div class="flex gap-5">
+                  <div class="text-[#c73a0fff] font-semibold text-xs">1X</div>
+                  <div class="text-[#87635aff] text-xs">@$5.50</div>
+                </div>
+              </div>
+
+              <div
+                class="w-2/10 text-[#87635aff] font-semibold text-xs my-auto text-end">
+                @$5.50
+              </div>
+            </div>
+            <hr class="my-4 border-[#c9aea6ff]" />
+            <div class="total flex justify-between">
+              <div class="text-[#87635aff]">Order total</div>
+              <div class="text-2xl font-bold">5$</div>
+            </div>
+          </div>
+
+          <button
+            class="new-order-btn text-sm bg-[#c73a0fff] rounded-full p-3 w-full my-5 text-white">
+            Start New Order
+          </button>
+        </div>
+      </div>
     </div>
+
     <script defer src="js/script.js"></script>
   </body>
 </html>

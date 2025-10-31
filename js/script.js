@@ -6,9 +6,11 @@ const totalEl = document.querySelector(".total");
 const dessertCardEl = document.querySelectorAll(".dessert-card");
 const yourCartEl = document.querySelector(".your-cart");
 const orderCart = [];
-
 const carbonNeutralEl = document.querySelector(".carbon-neutral");
 const confirmBtnEl = document.querySelector(".confirm-btn");
+const modalEl = document.querySelector(".modal");
+const newOrderBtn = document.querySelector(".new-order-btn ");
+const modalItems = document.querySelector(".modal-items");
 
 dessertsListEl.addEventListener("click", function (e) {
   if (e.target.closest(".add-cart")) {
@@ -75,6 +77,7 @@ dessertsListEl.addEventListener("click", function (e) {
 
 function renderCart(orderCartArry) {
   cartItemsEl.innerHTML = "";
+  modalItems.innerHTML = "";
 
   orderCartArry.forEach(function (product) {
     const price = product.price;
@@ -117,6 +120,36 @@ function renderCart(orderCartArry) {
                     </div>
                     <hr class="divider border-[#c9aea6ff]" />`;
     cartItemsEl.insertAdjacentHTML("beforeend", newCartItem);
+
+    const newModalItem = `<div class="flex justify-items-center justify-between">
+                            <div class="w-2/10 my-auto">
+                              <img
+                                class="rounded-sm overflow-hidden"
+                                src="images/image-baklava-thumbnail.jpg"
+                                alt="" />
+                            </div>
+
+                            <div class="w-5/10 flex flex-col justify-around">
+                              <div class="font-bold text-[#260f08ff] text-xs">
+                                ${product.name
+      }
+                              </div>
+                              <div class="flex gap-5">
+                                <div class="text-[#c73a0fff] font-semibold text-xs">${product.count}X</div>
+                                <div class="text-[#87635aff] text-xs">@$${product.price
+      }</div>
+                              </div>
+                            </div>
+
+                            <div class="w-2/10 text-[#87635aff] font-semibold text-xs my-auto text-end">
+                              @$${totalPrice.toFixed(
+        2
+      )}
+                            </div>
+                        </div>
+                        <hr class="my-4 border-[#c9aea6ff]" />`;
+    modalItems.insertAdjacentHTML("beforeend", newModalItem);
+    
   });
   total();
 }
@@ -158,6 +191,12 @@ function total() {
                       <div class="text-2xl font-bold">$${result.toFixed(2)}</div>
                    </div>`;
     cartItemsEl.insertAdjacentHTML("beforeend", totalCart);
+
+    const totalModal = `            <div class="total flex justify-between">
+              <div class="text-[#87635aff]">Order total</div>
+              <div class="text-2xl font-bold">${result.toFixed(2)}$</div>
+            </div>`;
+     modalItems.insertAdjacentHTML("beforeend", totalModal);
   }
   orderCart.forEach(function (product) {
     totalCount = product.count + totalCount;
@@ -177,3 +216,13 @@ function total() {
     
   }
 }
+
+confirmBtnEl.addEventListener("click", function (e) {
+  e.preventDefault();
+  modalEl.classList.remove("hidden") ;
+  
+})
+
+newOrderBtn.addEventListener("click", function () {
+  modalEl.classList.add("hidden") ;
+})
