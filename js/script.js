@@ -1,4 +1,6 @@
-const addCartEl = document.querySelector(".add-cart");
+const addCartEl = document.querySelectorAll(".add-cart");
+console.log(addCartEl);
+const counterBtnEl = document.querySelectorAll(".counter");
 const emptyListEl = document.querySelector(".empty-list");
 const cartItemsEl = document.querySelector(".cart-items");
 const dessertsListEl = document.querySelector(".desserts-list");
@@ -131,25 +133,24 @@ function renderCart(orderCartArry) {
 
                             <div class="w-5/10 flex flex-col justify-around">
                               <div class="font-bold text-[#260f08ff] text-xs">
-                                ${product.name
-      }
+                                ${product.name}
                               </div>
                               <div class="flex gap-5">
-                                <div class="text-[#c73a0fff] font-semibold text-xs">${product.count}X</div>
-                                <div class="text-[#87635aff] text-xs">@$${product.price
-      }</div>
+                                <div class="text-[#c73a0fff] font-semibold text-xs">${
+                                  product.count
+                                }X</div>
+                                <div class="text-[#87635aff] text-xs">@$${
+                                  product.price
+                                }</div>
                               </div>
                             </div>
 
                             <div class="w-2/10 text-[#87635aff] font-semibold text-xs my-auto text-end">
-                              @$${totalPrice.toFixed(
-        2
-      )}
+                              @$${totalPrice.toFixed(2)}
                             </div>
                         </div>
                         <hr class="my-4 border-[#c9aea6ff]" />`;
     modalItems.insertAdjacentHTML("beforeend", newModalItem);
-    
   });
   total();
 }
@@ -175,11 +176,12 @@ cartItemsEl.addEventListener("click", function (e) {
     counterEl.dataset.count = 0;
   }
 });
+
 function total() {
   const totalPrice = document.querySelectorAll(".total-price");
   let result = 0;
   let totalCount = 0;
-   totalPrice.forEach(function (price) {
+  totalPrice.forEach(function (price) {
     const a = price.innerText;
     const priceNumber = parseFloat(a.replace(/[^0-9.]/g, ""));
     result = result + priceNumber;
@@ -188,7 +190,9 @@ function total() {
   if (result) {
     const totalCart = `<div class="total flex justify-between py-5">
                       <div class="text-[#87635aff]">Order total</div>
-                      <div class="text-2xl font-bold">$${result.toFixed(2)}</div>
+                      <div class="text-2xl font-bold">$${result.toFixed(
+                        2
+                      )}</div>
                    </div>`;
     cartItemsEl.insertAdjacentHTML("beforeend", totalCart);
 
@@ -196,7 +200,7 @@ function total() {
               <div class="text-[#87635aff]">Order total</div>
               <div class="text-2xl font-bold">${result.toFixed(2)}$</div>
             </div>`;
-     modalItems.insertAdjacentHTML("beforeend", totalModal);
+    modalItems.insertAdjacentHTML("beforeend", totalModal);
   }
   orderCart.forEach(function (product) {
     totalCount = product.count + totalCount;
@@ -210,19 +214,39 @@ function total() {
   h1El.remove();
   yourCartEl.insertAdjacentHTML("afterbegin", titr);
   if (totalCount == 0) {
-        emptyListEl.style.display = "block";
+    emptyListEl.style.display = "block";
     carbonNeutralEl.style.display = "none";
     confirmBtnEl.style.display = "none";
-    
   }
 }
 
 confirmBtnEl.addEventListener("click", function (e) {
   e.preventDefault();
-  modalEl.classList.remove("hidden") ;
-  
-})
+  modalEl.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+});
 
 newOrderBtn.addEventListener("click", function () {
-  modalEl.classList.add("hidden") ;
-})
+  cartItemsEl.innerHTML = "";
+  modalItems.innerHTML = "";
+  orderCart.length = 0;
+  document.body.style.overflow = "";
+  emptyListEl.style.display = "block";
+  carbonNeutralEl.style.display = "none";
+  confirmBtnEl.style.display = "none";
+  modalEl.classList.add("hidden");
+  addCartEl.forEach(function (addBtn) {
+    addBtn.classList.remove("hidden");
+  });
+  counterBtnEl.forEach(function (counter) {
+    counter.classList.add("hidden");
+  });
+  const titr = `        <h1 class="text-[#c73a0fff] font-black pb-1">
+          Your Cart(
+          0
+          )
+        </h1>`;
+  const h1El = yourCartEl.querySelector("h1");
+  h1El.remove();
+  yourCartEl.insertAdjacentHTML("afterbegin", titr);
+});
