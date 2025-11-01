@@ -8,9 +8,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-[#fcf9f7ff] relative">
+    <!-- start of main container -->
     <div
-      class="container p-5 md:p-10 mx-auto flex flex-col sm:flex-row gap-1 md:gap-x-5">
-      <!------------------------------------section desserts list-------------------------------------->
+      class="container p-5 md:p-10 mx-auto flex flex-col sm:flex-row gap-5 md:gap-x-5">
+      <!------------------------------------ start of desserts list section-------------------------------------->
       <div
         class="desserts-list flex-[2] flex flex-wrap py-5 gap-3 justify-center md:justify-start">
         <h1 class="w-full text-2xl font-black">Desserts</h1>
@@ -35,45 +36,43 @@
             class="rounded-lg hidden thumbnail-pic"
             src="images/image-waffle-thumbnail.jpg"
             alt="" />
-          <form action="">
-            <button
-              type="submit"
-              class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
-              <img src="images/icon-add-to-cart.svg" alt="" />
-              &nbsp;&nbsp;Add to Cart
-            </button>
-            <button
-              type="submit"
-              data-count="1"
-              class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
-              <div
-                class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="10"
-                  height="2"
-                  fill="currentColor"
-                  viewBox="0 0 10 2"
-                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
-                  <path d="M0 .375h10v1.25H0V.375Z" />
-                </svg>
-              </div>
-              <span class="count-value">1</span>
-              <div
-                class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="10"
-                  height="10"
-                  fill="currentColor"
-                  viewBox="0 0 10 10"
-                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
-                  <path
-                    d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
-                </svg>
-              </div>
-            </button>
-          </form>
+          <button
+            type="button"
+            class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
+            <img src="images/icon-add-to-cart.svg" alt="" />
+            &nbsp;&nbsp;Add to Cart
+          </button>
+          <button
+            type="button"
+            data-count="1"
+            class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
+            <div
+              class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="2"
+                fill="currentColor"
+                viewBox="0 0 10 2"
+                class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                <path d="M0 .375h10v1.25H0V.375Z" />
+              </svg>
+            </div>
+            <span class="count-value">1</span>
+            <div
+              class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                fill="currentColor"
+                viewBox="0 0 10 10"
+                class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                <path
+                  d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+              </svg>
+            </div>
+          </button>
           <div>
             <div class="text-[#87635aff]">waffle</div>
             <div class="dessert-name font-bold">Waffle with Berries</div>
@@ -100,45 +99,43 @@
             class="rounded-lg hidden thumbnail-pic"
             src="images/image-brownie-thumbnail.jpg"
             alt="" />
-          <form action="">
-            <button
-              type="submit"
-              class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
-              <img src="images/icon-add-to-cart.svg" alt="" />
-              &nbsp;&nbsp;Add to Cart
-            </button>
-            <button
-              type="submit"
-              data-count="1"
-              class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
-              <div
-                class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="10"
-                  height="2"
-                  fill="currentColor"
-                  viewBox="0 0 10 2"
-                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
-                  <path d="M0 .375h10v1.25H0V.375Z" />
-                </svg>
-              </div>
-              <span class="count-value">1</span>
-              <div
-                class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="10"
-                  height="10"
-                  fill="currentColor"
-                  viewBox="0 0 10 10"
-                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
-                  <path
-                    d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
-                </svg>
-              </div>
-            </button>
-          </form>
+          <button
+            type="button"
+            class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
+            <img src="images/icon-add-to-cart.svg" alt="" />
+            &nbsp;&nbsp;Add to Cart
+          </button>
+          <button
+            type="button"
+            data-count="1"
+            class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
+            <div
+              class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="2"
+                fill="currentColor"
+                viewBox="0 0 10 2"
+                class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                <path d="M0 .375h10v1.25H0V.375Z" />
+              </svg>
+            </div>
+            <span class="count-value">1</span>
+            <div
+              class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                fill="currentColor"
+                viewBox="0 0 10 10"
+                class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                <path
+                  d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+              </svg>
+            </div>
+          </button>
           <div>
             <div class="text-[#87635aff]">Brownie</div>
             <div class="dessert-name font-bold">Salted Caramel Brownie</div>
@@ -165,45 +162,43 @@
             class="rounded-lg hidden thumbnail-pic"
             src="images/image-baklava-thumbnail.jpg"
             alt="" />
-          <form action="">
-            <button
-              type="submit"
-              class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
-              <img src="images/icon-add-to-cart.svg" alt="" />
-              &nbsp;&nbsp;Add to Cart
-            </button>
-            <button
-              type="submit"
-              data-count="1"
-              class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
-              <div
-                class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="10"
-                  height="2"
-                  fill="currentColor"
-                  viewBox="0 0 10 2"
-                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
-                  <path d="M0 .375h10v1.25H0V.375Z" />
-                </svg>
-              </div>
-              <span class="count-value">1</span>
-              <div
-                class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="10"
-                  height="10"
-                  fill="currentColor"
-                  viewBox="0 0 10 10"
-                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
-                  <path
-                    d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
-                </svg>
-              </div>
-            </button>
-          </form>
+          <button
+            type="button"
+            class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
+            <img src="images/icon-add-to-cart.svg" alt="" />
+            &nbsp;&nbsp;Add to Cart
+          </button>
+          <button
+            type="button"
+            data-count="1"
+            class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
+            <div
+              class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="2"
+                fill="currentColor"
+                viewBox="0 0 10 2"
+                class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                <path d="M0 .375h10v1.25H0V.375Z" />
+              </svg>
+            </div>
+            <span class="count-value">1</span>
+            <div
+              class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                fill="currentColor"
+                viewBox="0 0 10 10"
+                class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                <path
+                  d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+              </svg>
+            </div>
+          </button>
           <div>
             <div class="text-[#87635aff]">Baklava</div>
             <div class="dessert-name font-bold">Pistachio Baklava</div>
@@ -230,45 +225,43 @@
             class="rounded-lg hidden thumbnail-pic"
             src="images/image-cake-thumbnail.jpg"
             alt="" />
-          <form action="">
-            <button
-              type="submit"
-              class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
-              <img src="images/icon-add-to-cart.svg" alt="" />
-              &nbsp;&nbsp;Add to Cart
-            </button>
-            <button
-              type="submit"
-              data-count="1"
-              class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
-              <div
-                class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="10"
-                  height="2"
-                  fill="currentColor"
-                  viewBox="0 0 10 2"
-                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
-                  <path d="M0 .375h10v1.25H0V.375Z" />
-                </svg>
-              </div>
-              <span class="count-value">1</span>
-              <div
-                class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="10"
-                  height="10"
-                  fill="currentColor"
-                  viewBox="0 0 10 10"
-                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
-                  <path
-                    d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
-                </svg>
-              </div>
-            </button>
-          </form>
+          <button
+            type="button"
+            class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
+            <img src="images/icon-add-to-cart.svg" alt="" />
+            &nbsp;&nbsp;Add to Cart
+          </button>
+          <button
+            type="button"
+            data-count="1"
+            class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
+            <div
+              class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="2"
+                fill="currentColor"
+                viewBox="0 0 10 2"
+                class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                <path d="M0 .375h10v1.25H0V.375Z" />
+              </svg>
+            </div>
+            <span class="count-value">1</span>
+            <div
+              class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                fill="currentColor"
+                viewBox="0 0 10 10"
+                class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                <path
+                  d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+              </svg>
+            </div>
+          </button>
           <div>
             <div class="text-[#87635aff]">Cake</div>
             <div class="dessert-name font-bold">Velvet Cake</div>
@@ -295,45 +288,43 @@
             class="rounded-lg hidden thumbnail-pic"
             src="images/image-creme-brulee-thumbnail.jpg"
             alt="" />
-          <form action="">
-            <button
-              type="submit"
-              class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
-              <img src="images/icon-add-to-cart.svg" alt="" />
-              &nbsp;&nbsp;Add to Cart
-            </button>
-            <button
-              type="submit"
-              data-count="1"
-              class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
-              <div
-                class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="10"
-                  height="2"
-                  fill="currentColor"
-                  viewBox="0 0 10 2"
-                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
-                  <path d="M0 .375h10v1.25H0V.375Z" />
-                </svg>
-              </div>
-              <span class="count-value">1</span>
-              <div
-                class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="10"
-                  height="10"
-                  fill="currentColor"
-                  viewBox="0 0 10 10"
-                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
-                  <path
-                    d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
-                </svg>
-              </div>
-            </button>
-          </form>
+          <button
+            type="button"
+            class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
+            <img src="images/icon-add-to-cart.svg" alt="" />
+            &nbsp;&nbsp;Add to Cart
+          </button>
+          <button
+            type="button"
+            data-count="1"
+            class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
+            <div
+              class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="2"
+                fill="currentColor"
+                viewBox="0 0 10 2"
+                class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                <path d="M0 .375h10v1.25H0V.375Z" />
+              </svg>
+            </div>
+            <span class="count-value">1</span>
+            <div
+              class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                fill="currentColor"
+                viewBox="0 0 10 10"
+                class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                <path
+                  d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+              </svg>
+            </div>
+          </button>
           <div>
             <div class="text-[#87635aff]">Crème Brûlée</div>
             <div class="dessert-name font-bold">Vanilla Bean Crème Brûlée</div>
@@ -360,45 +351,43 @@
             class="rounded-lg hidden thumbnail-pic"
             src="images/image-macaron-thumbnail.jpg"
             alt="" />
-          <form action="">
-            <button
-              type="submit"
-              class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
-              <img src="images/icon-add-to-cart.svg" alt="" />
-              &nbsp;&nbsp;Add to Cart
-            </button>
-            <button
-              type="submit"
-              data-count="1"
-              class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
-              <div
-                class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="10"
-                  height="2"
-                  fill="currentColor"
-                  viewBox="0 0 10 2"
-                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
-                  <path d="M0 .375h10v1.25H0V.375Z" />
-                </svg>
-              </div>
-              <span class="count-value">1</span>
-              <div
-                class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="10"
-                  height="10"
-                  fill="currentColor"
-                  viewBox="0 0 10 10"
-                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
-                  <path
-                    d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
-                </svg>
-              </div>
-            </button>
-          </form>
+          <button
+            type="button"
+            class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
+            <img src="images/icon-add-to-cart.svg" alt="" />
+            &nbsp;&nbsp;Add to Cart
+          </button>
+          <button
+            type="button"
+            data-count="1"
+            class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
+            <div
+              class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="2"
+                fill="currentColor"
+                viewBox="0 0 10 2"
+                class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                <path d="M0 .375h10v1.25H0V.375Z" />
+              </svg>
+            </div>
+            <span class="count-value">1</span>
+            <div
+              class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                fill="currentColor"
+                viewBox="0 0 10 10"
+                class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                <path
+                  d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+              </svg>
+            </div>
+          </button>
           <div>
             <div class="text-[#87635aff]">Macaron</div>
             <div class="dessert-name font-bold">Macaron Mix of Five</div>
@@ -425,45 +414,43 @@
             class="rounded-lg hidden thumbnail-pic"
             src="images/image-meringue-thumbnail.jpg"
             alt="" />
-          <form action="">
-            <button
-              type="submit"
-              class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
-              <img src="images/icon-add-to-cart.svg" alt="" />
-              &nbsp;&nbsp;Add to Cart
-            </button>
-            <button
-              type="submit"
-              data-count="1"
-              class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
-              <div
-                class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="10"
-                  height="2"
-                  fill="currentColor"
-                  viewBox="0 0 10 2"
-                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
-                  <path d="M0 .375h10v1.25H0V.375Z" />
-                </svg>
-              </div>
-              <span class="count-value">1</span>
-              <div
-                class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="10"
-                  height="10"
-                  fill="currentColor"
-                  viewBox="0 0 10 10"
-                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
-                  <path
-                    d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
-                </svg>
-              </div>
-            </button>
-          </form>
+          <button
+            type="button"
+            class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
+            <img src="images/icon-add-to-cart.svg" alt="" />
+            &nbsp;&nbsp;Add to Cart
+          </button>
+          <button
+            type="button"
+            data-count="1"
+            class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
+            <div
+              class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="2"
+                fill="currentColor"
+                viewBox="0 0 10 2"
+                class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                <path d="M0 .375h10v1.25H0V.375Z" />
+              </svg>
+            </div>
+            <span class="count-value">1</span>
+            <div
+              class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                fill="currentColor"
+                viewBox="0 0 10 10"
+                class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                <path
+                  d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+              </svg>
+            </div>
+          </button>
           <div>
             <div class="text-[#87635aff]">Pie</div>
             <div class="dessert-name font-bold">Lemon Meringue Pie</div>
@@ -490,45 +477,43 @@
             class="rounded-lg hidden thumbnail-pic"
             src="images/image-panna-cotta-thumbnail.jpg"
             alt="" />
-          <form action="">
-            <button
-              type="submit"
-              class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
-              <img src="images/icon-add-to-cart.svg" alt="" />
-              &nbsp;&nbsp;Add to Cart
-            </button>
-            <button
-              type="submit"
-              data-count="1"
-              class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
-              <div
-                class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="10"
-                  height="2"
-                  fill="currentColor"
-                  viewBox="0 0 10 2"
-                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
-                  <path d="M0 .375h10v1.25H0V.375Z" />
-                </svg>
-              </div>
-              <span class="count-value">1</span>
-              <div
-                class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="10"
-                  height="10"
-                  fill="currentColor"
-                  viewBox="0 0 10 10"
-                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
-                  <path
-                    d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
-                </svg>
-              </div>
-            </button>
-          </form>
+          <button
+            type="button"
+            class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
+            <img src="images/icon-add-to-cart.svg" alt="" />
+            &nbsp;&nbsp;Add to Cart
+          </button>
+          <button
+            type="button"
+            data-count="1"
+            class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
+            <div
+              class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="2"
+                fill="currentColor"
+                viewBox="0 0 10 2"
+                class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                <path d="M0 .375h10v1.25H0V.375Z" />
+              </svg>
+            </div>
+            <span class="count-value">1</span>
+            <div
+              class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                fill="currentColor"
+                viewBox="0 0 10 10"
+                class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                <path
+                  d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+              </svg>
+            </div>
+          </button>
           <div>
             <div class="text-[#87635aff]">Panna Cotta</div>
             <div class="dessert-name font-bold">Vanilla Panna Cotta</div>
@@ -555,45 +540,44 @@
             class="rounded-lg hidden thumbnail-pic"
             src="images/image-tiramisu-thumbnail.jpg"
             alt="" />
-          <form action="">
-            <button
-              type="submit"
-              class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
-              <img src="images/icon-add-to-cart.svg" alt="" />
-              &nbsp;&nbsp;Add to Cart
-            </button>
-            <button
-              type="submit"
-              data-count="1"
-              class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
-              <div
-                class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="10"
-                  height="2"
-                  fill="currentColor"
-                  viewBox="0 0 10 2"
-                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
-                  <path d="M0 .375h10v1.25H0V.375Z" />
-                </svg>
-              </div>
-              <span class="count-value">1</span>
-              <div
-                class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="10"
-                  height="10"
-                  fill="currentColor"
-                  viewBox="0 0 10 10"
-                  class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
-                  <path
-                    d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
-                </svg>
-              </div>
-            </button>
-          </form>
+
+          <button
+            type="button"
+            class="add-cart text-xs mx-auto bg-white w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-center outline-1 cursor-pointer border-0 outline-[#c9aea6ff] hover:outline-[#c73a0fff] hover:text-[#c73a0fff] transition duration-300">
+            <img src="images/icon-add-to-cart.svg" alt="" />
+            &nbsp;&nbsp;Add to Cart
+          </button>
+          <button
+            type="button"
+            data-count="1"
+            class="hidden counter text-xs mx-auto text-white bg-[#c73a0fff] w-2/3 rounded-2xl p-2 transform -translate-y-4 flex justify-between outline-1 cursor-pointer border-none outline-none transition duration-300">
+            <div
+              class="minus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="2"
+                fill="currentColor"
+                viewBox="0 0 10 2"
+                class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                <path d="M0 .375h10v1.25H0V.375Z" />
+              </svg>
+            </div>
+            <span class="count-value">1</span>
+            <div
+              class="plus w-5 h-5 group rounded-full bg-[#c73a0fff] border-1 border-white flex items-center justify-center hover:bg-white transition-colors duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                fill="currentColor"
+                viewBox="0 0 10 10"
+                class="text-white group-hover:text-[#c73a0fff] transition-colors duration-300">
+                <path
+                  d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z" />
+              </svg>
+            </div>
+          </button>
           <div>
             <div class="text-[#87635aff]">Tiramisu</div>
             <div class="dessert-name font-bold">Classic Tiramisu</div>
@@ -601,8 +585,9 @@
           </div>
         </div>
       </div>
+      <!------------------------------------ end of desserts list section---------------------------------------->
 
-      <!------------------------------------------------------section yourcart----------------------------->
+      <!-------------------------------------start of  yourcart section------------------------------------------>
       <div
         class="your-cart bg-white rounded-lg flex-[1] p-5 h-max sticky top-4 self-start max-h-[100vh] overflow-y-auto w-full">
         <h1 class="text-[#c73a0fff] font-black pb-1">Your Cart(0)</h1>
@@ -615,6 +600,10 @@
           <div class="justify-self-center">Your added items appear here</div>
         </div>
         <div class="cart-items"></div>
+        <div class="total-section hidden flex justify-between py-5">
+          <div class="text-[#87635aff]">Order total</div>
+          <div class="total text-2xl font-bold">$0</div>
+        </div>
 
         <div
           class="hidden carbon-neutral bg-[#fcf9f7ff] p-5 text-center rounded-lg mx-auto text-xs md:text-xs lg:text-base">
@@ -634,7 +623,9 @@
           </button>
         </form>
       </div>
-      <!------------------------------------------ modal section ------------------------------------------>
+      <!-------------------------------------end of  yourcart section------------------------------------------->
+
+      <!-------------------------------------start of modal section -------------------------------------------->
       <div
         class="hidden modal fixed bg-black/50 inset-0 flex items-center justify-center">
         <div
@@ -670,9 +661,9 @@
               </div>
             </div>
             <hr class="my-4 border-[#c9aea6ff]" />
-            <div class="total flex justify-between">
+            <div class="flex justify-between">
               <div class="text-[#87635aff]">Order total</div>
-              <div class="text-2xl font-bold">5$</div>
+              <div class="modal-total text-2xl font-bold">5$</div>
             </div>
           </div>
 
@@ -682,8 +673,9 @@
           </button>
         </div>
       </div>
+      <!-------------------------------------end of modal section ---------------------------------------------->
     </div>
-
+    <!-- end of main container -->
     <script defer src="js/script.js"></script>
   </body>
 </html>
